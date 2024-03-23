@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using AllergiesCsharpImplementation;
 
 [TestFixture]
@@ -16,7 +10,6 @@ public class AllergiesTests
         var allergies = new AllergiesCsharpImplementation.Allergies(0);
         Assert.That(allergies.IsAllergicTo(Allergen.Eggs), Is.False, "Expected no allergy to Eggs, but was found.");
         Assert.That(allergies.IsAllergicTo(Allergen.Peanuts), Is.False, "Expected no allergy to Peanuts, but was found.");
-        // You can add assertions for other allergens as needed
     }
 
     [Test]
